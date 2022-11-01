@@ -1,5 +1,5 @@
 const express = require("express");
-const CloudModel = require("../model/CloudModel");
+const AwsModel = require("../model/AwsModel");
 
 const router = express.Router();
 
@@ -14,10 +14,10 @@ router.use(function (req, res, next) {
 
 //get data
 
-router.get("/", async (req, res) => {
+router.get("/aws", async (req, res) => {
   try {
-    const cloud = await CloudModel.find();
-    res.json(cloud);
+    const aws = await AwsModel.find();
+    res.json(aws);
   } catch (err) {
     console.log({ massage: err });
   }

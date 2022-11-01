@@ -1,4 +1,4 @@
 To run server use "npm start dev" cmd
 you must have data in database
-data is in ccc data file 
+data is in "Awsdata" file 
 import it in mongodb
